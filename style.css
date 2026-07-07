@@ -748,6 +748,120 @@ ul, ol {
   color: var(--color-text-light);
 }
 
+/* ---------- お知らせ ---------- */
+.news__list {
+  max-width: 820px;
+  margin: 36px auto 0;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.news-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-item time {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-light);
+  letter-spacing: 0.05em;
+}
+
+.news-item__tag {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--color-white);
+  background: #a3988a;
+  border-radius: 999px;
+  padding: 2px 12px;
+}
+
+.news-item__tag--event {
+  background: var(--color-accent);
+}
+
+.news-item__tag--works {
+  background: var(--color-main);
+}
+
+.news-item p {
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+/* ---------- 採用情報 ---------- */
+.recruit__grid {
+  display: grid;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.recruit-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 26px 24px;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+
+.recruit-card h3 {
+  font-size: 19px;
+  color: var(--color-main-dark);
+  padding-bottom: 12px;
+  margin-bottom: 14px;
+  border-bottom: 2px solid var(--color-bg-warm);
+}
+
+.recruit-card dl {
+  margin-bottom: 14px;
+}
+
+.recruit-card dl div {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  padding: 5px 0;
+}
+
+.recruit-card dt {
+  flex-shrink: 0;
+  width: 72px;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.recruit-card > p {
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: auto;
+}
+
+.recruit__cta {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.recruit__cta p {
+  font-size: 14px;
+  color: var(--color-text-light);
+  margin-bottom: 16px;
+}
+
 /* ---------- お問い合わせ ---------- */
 .contact {
   background: linear-gradient(160deg, #7a5535, #5c3f26);
@@ -1118,6 +1232,15 @@ ul, ol {
     gap: 16px;
   }
 
+  .news-item p {
+    width: auto;
+    flex: 1;
+  }
+
+  .recruit__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .about__table dt {
     width: 130px;
   }
@@ -1182,16 +1305,17 @@ ul, ol {
 
   .gnav__list a {
     color: var(--color-text);
-    font-size: 15px;
-    padding: 8px 14px;
+    font-size: 14px;
+    padding: 8px 10px;
     position: relative;
+    white-space: nowrap;
   }
 
   .gnav__list a::after {
     content: "";
     position: absolute;
-    left: 14px;
-    right: 14px;
+    left: 10px;
+    right: 10px;
     bottom: 2px;
     height: 2px;
     border-radius: 2px;
@@ -1219,9 +1343,8 @@ ul, ol {
     display: none;
   }
 
-  .header__tel {
-    display: block;
-    text-align: right;
+  .recruit__grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .header__tel-number {
@@ -1289,5 +1412,16 @@ ul, ol {
   .footer__nav {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+/* ==========================================================
+   PC 大画面 (1200px〜)
+   ナビ項目が多いため、ヘッダーの電話番号は広い画面でのみ表示
+   ========================================================== */
+@media (min-width: 1200px) {
+  .header__tel {
+    display: block;
+    text-align: right;
   }
 }
