@@ -1444,13 +1444,15 @@ ul, ol {
 
   .footer__inner {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
+    gap: clamp(60px, 10vw, 140px);
   }
 
   .footer__nav {
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 14px 44px;
   }
 }
 
