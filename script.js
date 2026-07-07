@@ -88,6 +88,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  /* ---------- 電話番号表示モーダル ----------
+     tel: リンクを直接開くとブラウザが発信確認を出してしまうため、
+     まず番号を表示し、モーダル内のボタンからだけ発信できるようにする */
+  const telModal = document.getElementById('telModal');
+  let telModalOpener = null;
+
+  const openTelModal = (opener) => {
+    telModalOpener = opener;
+    telModal.hidden = false;
+    document.body.style.overflow = 'hidden';
+    telModal.querySelector('.tel-modal__close').focus();
+  };
+
+  const closeTelModal = () => {
+    telModal.hidden = true;
+    document.body.style.overflow = '';
+    if (telModalOpener) {
+      telModalOpener.focus();
+      telModalOpener = null;
+    }
+  };
+
+  // モーダル内の発信ボタン以外の tel: リンクは、発信せず番号表示に差し替える
+  document.querySelectorAll('a[href^="tel:"]:not(.tel-modal__call)').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      openTelModal(link);
+    });
+  });
+
+  telModal.querySelectorAll('[data-tel-close]').forEach((el) => {
+    el.addEventListener('click', closeTelModal);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !telModal.hidden) {
+      closeTelModal();
+    }
+  });
+
   /* ---------- お問い合わせフォーム(デモ用) ---------- */
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');

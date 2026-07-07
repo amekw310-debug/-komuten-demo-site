@@ -975,6 +975,96 @@ ul, ol {
   transform: translateY(0);
 }
 
+/* ---------- 電話番号表示モーダル ---------- */
+.tel-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.tel-modal[hidden] {
+  display: none;
+}
+
+.tel-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(59, 50, 40, 0.6);
+}
+
+.tel-modal__panel {
+  position: relative;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  padding: 36px 24px 28px;
+  width: min(100%, 400px);
+  text-align: center;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  animation: telModalIn 0.25s ease-out;
+}
+
+@keyframes telModalIn {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to { opacity: 1; transform: none; }
+}
+
+.tel-modal__close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--color-text-light);
+  cursor: pointer;
+}
+
+.tel-modal__title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-main-dark);
+}
+
+.tel-modal__number {
+  font-size: clamp(30px, 9vw, 38px);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: var(--color-text);
+  margin: 6px 0 2px;
+  user-select: all; /* タップで番号を選択コピーしやすく */
+}
+
+.tel-modal__hours {
+  font-size: 12px;
+  color: var(--color-text-light);
+  margin-bottom: 18px;
+}
+
+.tel-modal__call {
+  width: 100%;
+  padding: 14px;
+}
+
+.tel-modal__note {
+  font-size: 11px;
+  color: var(--color-text-light);
+  margin-top: 14px;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tel-modal__panel {
+    animation: none;
+  }
+}
+
 /* ---------- スクロールフェードイン ---------- */
 .fade-in {
   opacity: 0;

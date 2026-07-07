@@ -348,6 +348,19 @@
 
   <button class="to-top" id="toTop" type="button" aria-label="ページ上部へ戻る">↑</button>
 
+  <!-- 電話番号表示モーダル -->
+  <div class="tel-modal" id="telModal" role="dialog" aria-modal="true" aria-labelledby="telModalTitle" hidden>
+    <div class="tel-modal__overlay" data-tel-close></div>
+    <div class="tel-modal__panel">
+      <button class="tel-modal__close" type="button" data-tel-close aria-label="閉じる">&times;</button>
+      <p class="tel-modal__title" id="telModalTitle">お電話でのお問い合わせ</p>
+      <p class="tel-modal__number">0120-000-000</p>
+      <p class="tel-modal__hours">受付時間 9:00〜18:00(水曜定休)</p>
+      <a href="tel:0120-000-000" class="btn btn--primary tel-modal__call">この番号に電話をかける</a>
+      <p class="tel-modal__note">※ポートフォリオ用の架空のデモサイトのため、実際にはつながりません。</p>
+    </div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
