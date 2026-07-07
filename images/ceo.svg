@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice">
+  <rect width="400" height="400" fill="#f3e8d3"/>
+  <circle cx="200" cy="200" r="170" fill="#e8d6b8"/>
+  <!-- body -->
+  <path d="M90 400 q 0 -110 110 -110 q 110 0 110 110 Z" fill="#3d4a5c"/>
+  <path d="M168 300 h 64 l -10 46 h -44 Z" fill="#fdf8ee"/>
+  <path d="M186 306 l 14 18 l 14 -18" fill="none" stroke="#c8553d" stroke-width="8" stroke-linecap="round"/>
+  <!-- head -->
+  <circle cx="200" cy="200" r="78" fill="#f2c9a0"/>
+  <!-- hair -->
+  <path d="M122 190 q 4 -86 78 -86 q 74 0 78 86 q -14 -44 -38 -50 q 6 14 2 26 q -30 -34 -76 -22 q -34 10 -44 46 Z" fill="#4a3a2a"/>
+  <!-- face -->
+  <g fill="#3b2f22">
+    <circle cx="172" cy="200" r="7"/>
+    <circle cx="228" cy="200" r="7"/>
+  </g>
+  <path d="M162 178 q 10 -8 22 -4 M216 174 q 12 -4 22 4" stroke="#4a3a2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M182 240 q 18 14 36 0" stroke="#b06a45" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <ellipse cx="152" cy="226" rx="10" ry="6" fill="#e8a87c" opacity="0.7"/>
+  <ellipse cx="248" cy="226" rx="10" ry="6" fill="#e8a87c" opacity="0.7"/>
+  <!-- helmet under arm suggestion: small house icon badge -->
+  <g transform="translate(276 320)">
+    <circle r="34" fill="#c07d4a"/>
+    <path d="M-16 4 L 0 -12 L 16 4 V 18 H -16 Z" fill="#fdf8ee"/>
+    <rect x="-4" y="6" width="8" height="12" fill="#c07d4a"/>
+  </g>
+</svg>

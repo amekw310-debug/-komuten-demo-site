@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- interior: open living room with high ceiling -->
+  <rect width="800" height="600" fill="#f6efe2"/>
+  <!-- ceiling beams -->
+  <g fill="#a97c50">
+    <rect x="0" y="40" width="800" height="26"/>
+    <rect x="0" y="120" width="800" height="20" opacity="0.85"/>
+  </g>
+  <!-- floor -->
+  <rect y="440" width="800" height="160" fill="#d9b98c"/>
+  <g stroke="#c4a273" stroke-width="4">
+    <path d="M0 480 H 800 M0 525 H 800 M0 568 H 800"/>
+  </g>
+  <!-- tall window -->
+  <rect x="60" y="160" width="220" height="280" fill="#cde8ee" stroke="#8a6743" stroke-width="10"/>
+  <path d="M170 160 V 440 M60 300 H 280" stroke="#8a6743" stroke-width="7"/>
+  <path d="M80 400 q 60 -60 180 -30" stroke="#ffffff" stroke-width="10" fill="none" opacity="0.5"/>
+  <!-- pendant lights -->
+  <g>
+    <path d="M480 66 V 190 M620 66 V 230" stroke="#5c4632" stroke-width="5"/>
+    <path d="M450 190 h 60 l -12 40 h -36 Z" fill="#e8b04b"/>
+    <path d="M590 230 h 60 l -12 40 h -36 Z" fill="#e8b04b"/>
+  </g>
+  <!-- sofa -->
+  <g>
+    <rect x="360" y="360" width="300" height="90" rx="18" fill="#7d9b76"/>
+    <rect x="345" y="330" width="330" height="60" rx="18" fill="#8fac87"/>
+    <rect x="345" y="410" width="24" height="60" rx="8" fill="#5f7d59"/>
+    <rect x="651" y="410" width="24" height="60" rx="8" fill="#5f7d59"/>
+    <rect x="390" y="345" width="70" height="40" rx="10" fill="#e9d9ae"/>
+    <rect x="470" y="345" width="70" height="40" rx="10" fill="#d98e6a"/>
+  </g>
+  <!-- rug -->
+  <ellipse cx="480" cy="500" rx="200" ry="36" fill="#e7d3ad"/>
+  <!-- plant -->
+  <g>
+    <rect x="710" y="410" width="50" height="60" rx="8" fill="#b06a45"/>
+    <g stroke="#5d8a4a" stroke-width="10" fill="none" stroke-linecap="round">
+      <path d="M735 410 q -30 -60 -60 -70"/>
+      <path d="M735 410 q 5 -70 40 -90"/>
+      <path d="M735 410 q 30 -50 15 -100"/>
+    </g>
+  </g>
+  <!-- small table -->
+  <rect x="430" y="470" width="110" height="14" rx="6" fill="#a97c50"/>
+  <path d="M445 484 v 30 M525 484 v 30" stroke="#8a6743" stroke-width="8"/>
+</svg>

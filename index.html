@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ひだまり工務店|緑川市の地域密着型工務店 - 木の温もりを暮らしに</title>
+  <meta name="description" content="ひだまり工務店は緑川市を中心に、注文住宅・リフォームを手がける地域密着型の工務店です。自然素材を活かした、家族の暮らしに寄り添う家づくりをご提案します。※本サイトはポートフォリオ用の架空サイトです。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- デモサイト注記 -->
+  <div class="demo-note">※このサイトはポートフォリオ用に制作した架空の工務店のデモサイトです。実在の企業・団体とは関係ありません。</div>
+
+  <!-- ヘッダー -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#top" class="header__logo">
+        <span class="header__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" role="img" aria-label="ひだまり工務店ロゴ">
+            <circle cx="24" cy="24" r="22" fill="#c07d4a"/>
+            <path d="M12 26 L24 14 L36 26 V38 H12 Z" fill="#fdf8ee"/>
+            <rect x="21" y="28" width="6" height="10" fill="#c07d4a"/>
+          </svg>
+        </span>
+        <span class="header__logo-text">ひだまり工務店<small>緑川市の家づくりパートナー</small></span>
+      </a>
+
+      <nav class="gnav" id="gnav" aria-label="グローバルナビゲーション">
+        <ul class="gnav__list">
+          <li><a href="#works">施工事例</a></li>
+          <li><a href="#flow">家づくりの流れ</a></li>
+          <li><a href="#about">会社紹介</a></li>
+          <li><a href="#voice">お客様の声</a></li>
+          <li class="gnav__contact"><a href="#contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__tel">
+        <a href="tel:0120-000-000">
+          <span class="header__tel-number">0120-000-000</span>
+          <span class="header__tel-hours">受付 9:00〜18:00(水曜定休)</span>
+        </a>
+      </div>
+
+      <button class="menu-btn" id="menuBtn" type="button" aria-controls="gnav" aria-expanded="false">
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__bar"></span>
+        <span class="menu-btn__label">MENU</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ヒーロー -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="images/hero.svg" alt="緑に囲まれた木の家のイラスト">
+      </div>
+      <div class="hero__content">
+        <p class="hero__catch">
+          <span>木の温もりと、</span>
+          <span>ひだまりのような暮らしを。</span>
+        </p>
+        <p class="hero__lead">緑川市で創業45年。地域の気候風土を知り尽くした大工が、<br class="pc-only">一棟一棟ていねいに建てる、あなたの家。</p>
+        <div class="hero__btns">
+          <a href="#works" class="btn btn--primary">施工事例を見る</a>
+          <a href="#contact" class="btn btn--outline">無料相談はこちら</a>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span>SCROLL</div>
+    </section>
+
+    <!-- 強み -->
+    <section class="features section" id="features">
+      <div class="container">
+        <h2 class="section__title"><span class="section__title-en">Our Strengths</span>ひだまり工務店の家づくり</h2>
+        <div class="features__grid">
+          <article class="feature-card fade-in">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M32 6 L58 30 H50 V56 H38 V40 H26 V56 H14 V30 H6 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>自然素材の注文住宅</h3>
+            <p>県産の無垢材と漆喰など、肌に触れて心地よい自然素材を標準仕様に。夏は涼しく冬はあたたかい、健康的な住まいをつくります。</p>
+          </article>
+          <article class="feature-card fade-in">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="24" fill="none" stroke="currentColor" stroke-width="3.5"/><path d="M32 18 V 32 L 42 40" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>駆けつけ30分の安心</h3>
+            <p>対応エリアを緑川市とその近郊に限定。お引き渡し後の不具合やご相談にも、顔なじみのスタッフがすぐに駆けつけます。</p>
+          </article>
+          <article class="feature-card fade-in">
+            <div class="feature-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M32 54 C 20 44 8 36 8 24 a 13 13 0 0 1 24 -6 a 13 13 0 0 1 24 6 c 0 12 -12 20 -24 30 Z" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>自社大工による施工</h3>
+            <p>設計から施工まで一貫して自社の大工が担当。下請け任せにしないから、細部までこだわった確かな品質をお約束できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 施工事例 -->
+    <section class="works section section--bg" id="works">
+      <div class="container">
+        <h2 class="section__title"><span class="section__title-en">Works</span>施工事例</h2>
+        <p class="section__lead">これまでに手がけた新築・リフォームの一部をご紹介します。</p>
+
+        <div class="works__filter" role="group" aria-label="施工事例の絞り込み">
+          <button class="works__filter-btn is-active" type="button" data-filter="all">すべて</button>
+          <button class="works__filter-btn" type="button" data-filter="new">新築</button>
+          <button class="works__filter-btn" type="button" data-filter="reform">リフォーム</button>
+        </div>
+
+        <div class="works__grid">
+          <article class="work-card fade-in" data-category="new">
+            <figure class="work-card__img"><img src="images/work-01.svg" alt="ウッドデッキのある平屋の外観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--new">新築</span>
+              <h3>庭とつながる、平屋の家</h3>
+              <p>緑川市 K様邸|延床 28坪</p>
+            </div>
+          </article>
+          <article class="work-card fade-in" data-category="new">
+            <figure class="work-card__img"><img src="images/work-02.svg" alt="吹き抜けリビングの内観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--new">新築</span>
+              <h3>吹き抜けリビングの家</h3>
+              <p>緑川市 S様邸|延床 34坪</p>
+            </div>
+          </article>
+          <article class="work-card fade-in" data-category="new">
+            <figure class="work-card__img"><img src="images/work-03.svg" alt="和モダン住宅の外観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--new">新築</span>
+              <h3>格子が美しい和モダンの家</h3>
+              <p>青葉町 T様邸|延床 38坪</p>
+            </div>
+          </article>
+          <article class="work-card fade-in" data-category="new">
+            <figure class="work-card__img"><img src="images/work-04.svg" alt="バルコニーのある二階建て住宅の外観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--new">新築</span>
+              <h3>子育て世代の二階建て</h3>
+              <p>緑川市 M様邸|延床 32坪</p>
+            </div>
+          </article>
+          <article class="work-card fade-in" data-category="reform">
+            <figure class="work-card__img"><img src="images/work-05.svg" alt="リノベーションした対面キッチンの内観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--reform">リフォーム</span>
+              <h3>家事がはかどる対面キッチン</h3>
+              <p>川辺町 Y様邸|築22年</p>
+            </div>
+          </article>
+          <article class="work-card fade-in" data-category="reform">
+            <figure class="work-card__img"><img src="images/work-06.svg" alt="ビルトインガレージのある住宅の外観イラスト"></figure>
+            <div class="work-card__body">
+              <span class="work-card__tag work-card__tag--reform">リフォーム</span>
+              <h3>趣味を楽しむガレージハウス</h3>
+              <p>緑川市 H様邸|築30年</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 家づくりの流れ -->
+    <section class="flow section" id="flow">
+      <div class="container">
+        <h2 class="section__title"><span class="section__title-en">Flow</span>家づくりの流れ</h2>
+        <p class="section__lead">ご相談からお引き渡し、その後のアフターサポートまで。<br class="pc-only">はじめての家づくりでも安心して進められるよう、一歩ずつ伴走します。</p>
+
+        <ol class="flow__list">
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">01</div>
+            <div class="flow-step__body">
+              <h3>ご相談・ヒアリング<span class="flow-step__period">無料</span></h3>
+              <p>まずはお気軽にご相談ください。暮らしのご希望やご予算、土地の有無などをじっくりお伺いします。しつこい営業は一切いたしません。</p>
+            </div>
+          </li>
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">02</div>
+            <div class="flow-step__body">
+              <h3>敷地調査・プラン提案<span class="flow-step__period">約2〜4週間</span></h3>
+              <p>敷地の日当たりや風の通り道を調査し、ヒアリング内容をもとに間取りプランと概算お見積りをご提案します。</p>
+            </div>
+          </li>
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">03</div>
+            <div class="flow-step__body">
+              <h3>ご契約・詳細設計<span class="flow-step__period">約2〜3ヶ月</span></h3>
+              <p>プランにご納得いただけたらご契約へ。内装や設備の仕様を一つひとつ一緒に決めながら、詳細な設計図をまとめます。</p>
+            </div>
+          </li>
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">04</div>
+            <div class="flow-step__body">
+              <h3>着工・上棟<span class="flow-step__period">約1〜2ヶ月</span></h3>
+              <p>地鎮祭ののち、いよいよ工事開始。自社大工が責任を持って施工し、工事の進み具合は写真付きでご報告します。</p>
+            </div>
+          </li>
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">05</div>
+            <div class="flow-step__body">
+              <h3>完成・お引き渡し<span class="flow-step__period">着工から約4〜6ヶ月</span></h3>
+              <p>お客様と一緒に仕上がりを確認し、設備の使い方をご説明してお引き渡し。ここから新しい暮らしが始まります。</p>
+            </div>
+          </li>
+          <li class="flow-step fade-in">
+            <div class="flow-step__num">06</div>
+            <div class="flow-step__body">
+              <h3>アフターサポート<span class="flow-step__period">ずっと</span></h3>
+              <p>お引き渡し後は定期点検(6ヶ月・1年・2年・5年・10年)を実施。地域密着だからこそできる、末永いお付き合いをお約束します。</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- 会社紹介 -->
+    <section class="about section section--bg" id="about">
+      <div class="container">
+        <h2 class="section__title"><span class="section__title-en">About Us</span>会社紹介</h2>
+
+        <div class="about__message fade-in">
+          <figure class="about__photo">
+            <img src="images/ceo.svg" alt="代表 陽田守のイラスト">
+            <figcaption>代表取締役 陽田 守(ひだ まもる)</figcaption>
+          </figure>
+          <div class="about__text">
+            <h3>「近所の大工さん」で、あり続けたい。</h3>
+            <p>ひだまり工務店は、先代が緑川市の商店街の一角に構えた小さな大工店から始まりました。以来45年、この町の家族の「建てる」「直す」「守る」に寄り添ってきました。</p>
+            <p>家は建てて終わりではなく、暮らしと一緒に育っていくもの。だからこそ私たちは、売って終わりの家づくりではなく、いつでも駆けつけられる「近所の大工さん」であり続けることを大切にしています。</p>
+          </div>
+        </div>
+
+        <div class="about__info fade-in">
+          <h3 class="about__info-title">会社概要</h3>
+          <dl class="about__table">
+            <div><dt>会社名</dt><dd>株式会社ひだまり工務店(架空の会社です)</dd></div>
+            <div><dt>所在地</dt><dd>〒000-0000 ○○県緑川市ひだまり町1-2-3</dd></div>
+            <div><dt>創業</dt><dd>1981年4月</dd></div>
+            <div><dt>代表者</dt><dd>代表取締役 陽田 守</dd></div>
+            <div><dt>従業員数</dt><dd>18名(自社大工8名)</dd></div>
+            <div><dt>事業内容</dt><dd>注文住宅の設計・施工、リフォーム・リノベーション、耐震診断・改修</dd></div>
+            <div><dt>建設業許可</dt><dd>○○県知事 許可(般-0)第00000号</dd></div>
+            <div><dt>対応エリア</dt><dd>緑川市・青葉町・川辺町 ほか近郊(車で30分圏内)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="voice section" id="voice">
+      <div class="container">
+        <h2 class="section__title"><span class="section__title-en">Voice</span>お客様の声</h2>
+        <div class="voice__grid">
+          <blockquote class="voice-card fade-in">
+            <p>打ち合わせのたびに要望を丁寧に聞いてくださり、予算内で想像以上の家になりました。子どもが無垢の床でゴロゴロするのが日課です。</p>
+            <cite>新築 K様(30代ご夫婦+お子様2人)</cite>
+          </blockquote>
+          <blockquote class="voice-card fade-in">
+            <p>台風で雨どいが外れた時、電話から30分で来てくれたのには驚きました。建てた後こそ工務店の真価だと実感しています。</p>
+            <cite>新築 T様(40代ご夫婦)</cite>
+          </blockquote>
+          <blockquote class="voice-card fade-in">
+            <p>キッチンのリフォームだけのつもりが、動線まで考えた提案をいただき家事が本当に楽になりました。次は浴室もお願いする予定です。</p>
+            <cite>リフォーム Y様(50代ご夫婦)</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title section__title--light"><span class="section__title-en">Contact</span>お問い合わせ</h2>
+        <p class="section__lead section__lead--light">家づくりのご相談・お見積り・資料請求など、お気軽にどうぞ。<br class="pc-only">「まだ何も決まっていない」という段階のご相談も大歓迎です。</p>
+
+        <div class="contact__tel fade-in">
+          <p class="contact__tel-label">お急ぎの方はお電話で</p>
+          <a href="tel:0120-000-000" class="contact__tel-number">0120-000-000</a>
+          <p class="contact__tel-hours">受付時間 9:00〜18:00(水曜定休)</p>
+        </div>
+
+        <form class="contact__form fade-in" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="type">ご相談内容 <span class="required">必須</span></label>
+            <select id="type" name="type" required>
+              <option value="">選択してください</option>
+              <option>新築のご相談</option>
+              <option>リフォームのご相談</option>
+              <option>資料請求</option>
+              <option>その他</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">お名前 <span class="required">必須</span></label>
+            <input type="text" id="name" name="name" placeholder="例)緑川 太郎" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">メールアドレス <span class="required">必須</span></label>
+            <input type="email" id="email" name="email" placeholder="例)example@example.com" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="tel">お電話番号 <span class="optional">任意</span></label>
+            <input type="tel" id="tel" name="tel" placeholder="例)090-0000-0000" autocomplete="tel">
+          </div>
+          <div class="form-group">
+            <label for="message">ご相談内容の詳細 <span class="optional">任意</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="ご希望やご質問など、ご自由にご記入ください。"></textarea>
+          </div>
+          <p class="form-note">※デモサイトのため、実際には送信されません。</p>
+          <button type="submit" class="btn btn--primary btn--large">送信する</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__company">
+        <p class="footer__logo">ひだまり工務店</p>
+        <p>〒000-0000 ○○県緑川市ひだまり町1-2-3<br>TEL 0120-000-000(9:00〜18:00 水曜定休)</p>
+      </div>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="#works">施工事例</a>
+        <a href="#flow">家づくりの流れ</a>
+        <a href="#about">会社紹介</a>
+        <a href="#voice">お客様の声</a>
+        <a href="#contact">お問い合わせ</a>
+      </nav>
+    </div>
+    <p class="footer__copy">&copy; 2026 Hidamari Koumuten (fictional demo site for portfolio)</p>
+  </footer>
+
+  <!-- スマホ用固定CTA -->
+  <div class="sp-cta" aria-hidden="false">
+    <a href="tel:0120-000-000" class="sp-cta__tel">電話する</a>
+    <a href="#contact" class="sp-cta__form">無料相談・お問い合わせ</a>
+  </div>
+
+  <button class="to-top" id="toTop" type="button" aria-label="ページ上部へ戻る">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

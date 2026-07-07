@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- garage house -->
+  <rect width="800" height="600" fill="#eef0ea"/>
+  <circle cx="120" cy="100" r="50" fill="#f6c665" opacity="0.85"/>
+  <path d="M0 450 Q 400 410 800 450 V 600 H 0 Z" fill="#aec98f"/>
+  <g>
+    <!-- flat modern box -->
+    <rect x="140" y="200" width="520" height="300" fill="#e9e2d2"/>
+    <rect x="140" y="185" width="540" height="22" fill="#3d4a5c"/>
+    <!-- second floor window band -->
+    <rect x="180" y="240" width="300" height="70" fill="#bfe0e8" stroke="#3d4a5c" stroke-width="7"/>
+    <path d="M280 240 V 310 M380 240 V 310" stroke="#3d4a5c" stroke-width="5"/>
+    <!-- wood accent on right -->
+    <rect x="520" y="207" width="140" height="293" fill="#c8a06a"/>
+    <g stroke="#a97c50" stroke-width="6"><path d="M520 250 H 660 M520 300 H 660 M520 350 H 660 M520 400 H 660 M520 450 H 660"/></g>
+    <!-- entrance door -->
+    <rect x="550" y="380" width="76" height="120" fill="#4a3a28"/>
+    <circle cx="612" cy="442" r="6" fill="#e9d9ae"/>
+    <!-- garage -->
+    <rect x="180" y="340" width="300" height="160" fill="#5a6472"/>
+    <g stroke="#454e5a" stroke-width="7"><path d="M180 372 H 480 M180 404 H 480 M180 436 H 480 M180 468 H 480"/></g>
+  </g>
+  <!-- car -->
+  <g>
+    <path d="M250 540 q 10 -34 46 -36 l 34 -22 q 40 -14 86 0 l 36 22 q 40 4 46 36 Z" fill="#c8553d"/>
+    <rect x="332" y="492" width="52" height="24" rx="6" fill="#cde8ee"/>
+    <rect x="392" y="492" width="46" height="24" rx="6" fill="#cde8ee"/>
+    <circle cx="308" cy="542" r="20" fill="#333b45"/>
+    <circle cx="308" cy="542" r="9" fill="#9aa3ad"/>
+    <circle cx="448" cy="542" r="20" fill="#333b45"/>
+    <circle cx="448" cy="542" r="9" fill="#9aa3ad"/>
+  </g>
+  <ellipse cx="400" cy="560" rx="310" ry="18" fill="#93b877"/>
+  <g>
+    <rect x="710" y="420" width="16" height="90" rx="6" fill="#8a6743"/>
+    <circle cx="718" cy="396" r="50" fill="#6f9e57"/>
+  </g>
+</svg>

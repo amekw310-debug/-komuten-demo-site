@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- Japanese modern house -->
+  <rect width="800" height="600" fill="#f3ede1"/>
+  <circle cx="130" cy="110" r="55" fill="#f2a05e" opacity="0.8"/>
+  <path d="M0 440 Q 300 390 800 430 V 600 H 0 Z" fill="#b9cf9e"/>
+  <g>
+    <!-- roof -->
+    <path d="M90 300 L 400 190 L 710 300 L 690 320 L 400 220 L 110 320 Z" fill="#4a4a4a"/>
+    <!-- body -->
+    <rect x="150" y="300" width="500" height="200" fill="#efe7d4"/>
+    <!-- dark wood accent -->
+    <rect x="150" y="300" width="200" height="200" fill="#5b4632"/>
+    <!-- shoji-like windows -->
+    <g fill="#f6f1e4" stroke="#3b2f22" stroke-width="5">
+      <rect x="175" y="330" width="150" height="120"/>
+    </g>
+    <g stroke="#3b2f22" stroke-width="4">
+      <path d="M225 330 V 450 M275 330 V 450 M175 370 H 325 M175 410 H 325"/>
+    </g>
+    <!-- entrance -->
+    <rect x="400" y="360" width="90" height="140" fill="#6f5236"/>
+    <path d="M415 360 V 500 M445 360 V 500 M475 360 V 500" stroke="#57402a" stroke-width="6"/>
+    <!-- round window -->
+    <circle cx="580" cy="380" r="40" fill="#cde8ee" stroke="#4a4a4a" stroke-width="7"/>
+  </g>
+  <!-- stone path -->
+  <g fill="#d8cdb4">
+    <ellipse cx="440" cy="520" rx="30" ry="12"/>
+    <ellipse cx="470" cy="548" rx="30" ry="12"/>
+    <ellipse cx="440" cy="576" rx="30" ry="12"/>
+  </g>
+  <!-- pine tree -->
+  <g>
+    <path d="M700 500 q -6 -60 18 -95" stroke="#6b4a2e" stroke-width="12" fill="none"/>
+    <ellipse cx="724" cy="392" rx="52" ry="26" fill="#4f7a43"/>
+    <ellipse cx="694" cy="430" rx="40" ry="20" fill="#5d8a4a"/>
+  </g>
+  <!-- bamboo fence -->
+  <g stroke="#9b8355" stroke-width="10">
+    <path d="M60 460 V 530 M90 460 V 530 M120 460 V 530"/>
+  </g>
+  <path d="M50 478 H 132 M50 508 H 132" stroke="#7c683f" stroke-width="6"/>
+</svg>

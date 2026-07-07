@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <!-- interior: renovated kitchen -->
+  <rect width="800" height="600" fill="#f4ead8"/>
+  <rect y="430" width="800" height="170" fill="#c9a97e"/>
+  <g stroke="#b6935f" stroke-width="4"><path d="M0 480 H 800 M0 530 H 800 M0 575 H 800"/></g>
+  <!-- window -->
+  <rect x="520" y="90" width="200" height="160" fill="#cde8ee" stroke="#8a6743" stroke-width="9"/>
+  <path d="M620 90 V 250 M520 170 H 720" stroke="#8a6743" stroke-width="6"/>
+  <!-- upper cabinets -->
+  <rect x="60" y="80" width="360" height="90" rx="8" fill="#5f7d59"/>
+  <g stroke="#4c6647" stroke-width="4"><path d="M180 80 V 170 M300 80 V 170"/></g>
+  <g fill="#e9d9ae"><rect x="110" y="120" width="26" height="8" rx="4"/><rect x="230" y="120" width="26" height="8" rx="4"/><rect x="350" y="120" width="26" height="8" rx="4"/></g>
+  <!-- range hood -->
+  <path d="M440 80 h 60 v 70 h -60 Z" fill="#9aa3ad"/>
+  <!-- tile backsplash -->
+  <rect x="60" y="180" width="440" height="130" fill="#e7f0f0"/>
+  <g stroke="#c6d8d8" stroke-width="3">
+    <path d="M60 215 H 500 M60 250 H 500 M60 285 H 500"/>
+    <path d="M115 180 V 310 M170 180 V 310 M225 180 V 310 M280 180 V 310 M335 180 V 310 M390 180 V 310 M445 180 V 310"/>
+  </g>
+  <!-- counter -->
+  <rect x="40" y="310" width="480" height="24" rx="6" fill="#d9c49a"/>
+  <rect x="52" y="334" width="456" height="130" fill="#6f8a68"/>
+  <g stroke="#5b7355" stroke-width="4"><path d="M204 334 V 464 M356 334 V 464"/></g>
+  <g fill="#e9d9ae"><rect x="115" y="390" width="30" height="9" rx="4"/><rect x="265" y="390" width="30" height="9" rx="4"/><rect x="415" y="390" width="30" height="9" rx="4"/></g>
+  <!-- sink + faucet -->
+  <rect x="90" y="300" width="110" height="12" rx="6" fill="#b9c2cb"/>
+  <path d="M140 300 v -34 q 0 -16 18 -16 h 14" stroke="#8f99a3" stroke-width="9" fill="none" stroke-linecap="round"/>
+  <!-- pot on stove -->
+  <rect x="380" y="284" width="86" height="28" rx="6" fill="#c8553d"/>
+  <rect x="372" y="278" width="102" height="10" rx="5" fill="#a84430"/>
+  <!-- island stools -->
+  <g fill="#a97c50">
+    <rect x="580" y="380" width="70" height="16" rx="8"/>
+    <path d="M595 396 v 70 M635 396 v 70" stroke="#8a6743" stroke-width="9"/>
+  </g>
+  <g fill="#a97c50">
+    <rect x="680" y="380" width="70" height="16" rx="8"/>
+    <path d="M695 396 v 70 M735 396 v 70" stroke="#8a6743" stroke-width="9"/>
+  </g>
+  <!-- hanging plant -->
+  <path d="M760 0 v 70" stroke="#5c4632" stroke-width="4"/>
+  <circle cx="760" cy="92" r="30" fill="#5d8a4a"/>
+</svg>
