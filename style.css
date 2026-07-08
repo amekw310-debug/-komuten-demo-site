@@ -1007,6 +1007,76 @@ ul, ol {
   color: #c8553d;
 }
 
+/* ---------- アクセス ---------- */
+.access__grid {
+  display: grid;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.access__map iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.access__map-note {
+  font-size: 11px;
+  color: var(--color-text-light);
+  margin-top: 8px;
+}
+
+.access__item {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.access__item:first-child {
+  padding-top: 0;
+}
+
+.access__item dt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-main-dark);
+  margin-bottom: 6px;
+}
+
+.access__item dt svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  color: var(--color-main);
+}
+
+.access__item dd {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.access__item strong {
+  color: var(--color-main-dark);
+}
+
+.access__hint {
+  display: block;
+  font-size: 13px;
+  color: var(--color-text-light);
+  margin-top: 2px;
+}
+
+.access__map-btn {
+  display: block;
+  margin-top: 22px;
+  text-align: center;
+}
+
 /* ---------- フッター ---------- */
 .footer {
   background: #3b3228;
@@ -1364,10 +1434,19 @@ ul, ol {
     height: auto;
   }
 
+  /* ナビ項目が多いため、ロゴは1行固定・サブタイトルは大画面のみ */
+  .header__logo-text {
+    white-space: nowrap;
+  }
+
+  .header__logo-text small {
+    display: none;
+  }
+
   .gnav__list a {
     color: var(--color-text);
     font-size: 14px;
-    padding: 8px 10px;
+    padding: 8px 9px;
     position: relative;
     white-space: nowrap;
   }
@@ -1408,6 +1487,22 @@ ul, ol {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .access__grid {
+    grid-template-columns: 1.1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+
+  .access__map iframe {
+    aspect-ratio: 1 / 1;
+    height: 100%;
+  }
+
+  .access__map-btn {
+    display: inline-block;
+    padding-inline: 44px;
+  }
+
   .header__tel-number {
     display: block;
     font-size: 20px;
@@ -1419,6 +1514,7 @@ ul, ol {
   .header__tel-hours {
     font-size: 10px;
     color: var(--color-text-light);
+    white-space: nowrap;
   }
 
   .section {
@@ -1482,9 +1578,31 @@ ul, ol {
    PC 大画面 (1200px〜)
    ナビ項目が多いため、ヘッダーの電話番号は広い画面でのみ表示
    ========================================================== */
+/* 960〜1199px はナビ8項目が収まるようさらにコンパクトに */
+@media (min-width: 960px) and (max-width: 1199px) {
+  .gnav__list a {
+    font-size: 13px;
+    padding: 8px 7px;
+  }
+
+  .gnav__list a::after {
+    left: 7px;
+    right: 7px;
+  }
+
+  .gnav__contact a {
+    padding: 9px 16px;
+    margin-left: 4px;
+  }
+}
+
 @media (min-width: 1200px) {
   .header__tel {
     display: block;
     text-align: right;
+  }
+
+  .header__logo-text small {
+    display: block;
   }
 }
